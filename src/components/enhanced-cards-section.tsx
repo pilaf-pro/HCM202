@@ -9,7 +9,7 @@ const cardData = [
     title: "Tư tưởng về văn hóa",
     description: "Xây dựng nền văn hóa mới theo tư tưởng Hồ Chí Minh",
     icon: "📚",
-    href: "/biography",
+    href: "/culture",
     gradient: "from-blue-500 to-cyan-500",
     bgPattern:
       "radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%)",
@@ -18,7 +18,7 @@ const cardData = [
     title: "Tư tưởng về đạo đức",
     description: "Đạo đức là gốc, các chuẩn mực và nguyên tắc xây dựng",
     icon: "📊",
-    href: "/theory",
+    href: "/morality",
     gradient: "from-purple-500 to-pink-500",
     bgPattern:
       "radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.1) 0%, transparent 50%)",
@@ -27,7 +27,7 @@ const cardData = [
     title: "Tư tưởng về con người",
     description: "Quan niệm, vai trò và chiến lược trồng người",
     icon: "📖",
-    href: "/teachings",
+    href: "/people",
     gradient: "from-green-500 to-emerald-500",
     bgPattern:
       "radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 50%)",

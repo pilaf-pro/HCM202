@@ -204,14 +204,14 @@ export function HeroSection3D() {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg transform hover:scale-105 transition-transform"
             >
-              <a href="/theory">Tìm hiểu về đạo đức</a>
+              <a href="/morality">Tìm hiểu về đạo đức</a>
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-blue-300 text-blue-700 hover:bg-blue-50 px-8 py-3 text-lg transform hover:scale-105 transition-transform bg-transparent"
             >
-              <a href="/biography">Khám phá về văn hóa</a>
+              <a href="/culture">Khám phá về văn hóa</a>
             </Button>
           </motion.div>
         </motion.div>
