@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import { PageTransition } from "@/components/page-transition";
-import { ConfuciusChatbot } from "@/components/confucius-chatbot";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +29,6 @@ export default function RootLayout({
         <PageTransition>
           <Suspense fallback={null}>{children}</Suspense>
         </PageTransition>
-        {/* <ConfuciusChatbot /> */}
         <Analytics />
       </body>
     </html>
