@@ -27,7 +27,7 @@ export function Header() {
     { href: "/culture", label: "Tư tưởng về văn hóa" },
     { href: "/morality", label: "Tư tưởng về đạo đức" },
     { href: "/people", label: "Tư tưởng về con người" },
-    { href: "/timeline", label: "Xây dựng hiện nay" },
+    { href: "/timeline", label: "Xây dựng" },
     // { href: "/quiz", label: "Quiz" },
     // { href: "/about", label: "Về Chúng Tôi" },
   ];
