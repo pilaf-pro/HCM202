@@ -15,9 +15,9 @@ const conditions = [
           "Con người vừa là một chỉnh thể (thống nhất trí lực, tâm lực, thể lực), vừa cụ thể (gắn với điều kiện lịch sử, xã hội). Bản chất con người mang tính xã hội.",
       },
       {
-        title: "Tính Xã Hội Của Con Người",
+        title: "Tính Lịch Sử Cụ Thể",
         content:
-          "Con người chỉ phát triển toàn diện khi được hòa nhập với cộng đồng, khi được phát triển các khả năng tinh thần, đạo đức, thể chất và trí tuệ.",
+          "Nhìn nhận con người trong tính lịch sử cụ thể về giới tính, lứa tuổi, nghề nghiệp, chức vụ, vị trí, đảng viên, công dân… đang sống trong hoàn cảnh đất nước cụ thể",
       },
     ],
   },
