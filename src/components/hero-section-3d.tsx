@@ -163,14 +163,14 @@ export function HeroSection3D() {
           >
             Về Văn Hóa, Đạo Đức & Con Người
           </motion.div>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
             className="text-xl md:text-2xl text-muted-foreground mb-6 text-pretty"
           >
             Khám Phá Những Giá Trị Tư Tưởng Sâu Sắc Về Xây Dựng Xã Hội
-          </motion.p>
+          </motion.p> */}
 
           <motion.div
             initial={{ width: 0 }}
