@@ -15,29 +15,42 @@ import { Badge } from "@/components/ui/badge";
 const timelineEvents = [
   {
     year: "I. Văn Hóa",
-    phase: "Xây Dựng",
+    phase: "Văn Hóa",
     title: "Xây Dựng Và Phát Triển Văn Hóa",
     description: "Nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc",
-    details:
-      "Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc; văn hóa là nền tảng tinh thần vững chắc, là sức mạnh nội sinh quan trọng. Văn hóa phải thấm sâu vào đời sống xã hội, thống nhất trong đa dạng. Ngành giáo dục, y tế, khoa học công nghệ phải phát triển lên trình độ mới, có khả năng thích ứng với xu hướng toàn cầu hóa.",
+    details: [
+      "Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc",
+      "Văn hóa là nền tảng tinh thần vững chắc, là sức mạnh nội sinh quan trọng",
+      "Văn hóa phải thấm sâu vào đời sống xã hội, thống nhất trong đa dạng",
+      "Ngành giáo dục, y tế, khoa học công nghệ phải phát triển lên trình độ mới, có khả năng thích ứng với xu hướng toàn cầu hóa",
+    ],
     category: "Xây Dựng",
   },
   {
     year: "II. Con Người",
-    phase: "Phát Triển",
+    phase: "Con Người",
     title: "Xây Dựng Con Người Phát Triển Toàn Diện",
     description: "Con người là trung tâm của chiến lược phát triển",
-    details:
-      "Xây dựng con người Việt Nam phát triển toàn diện (trí tuệ, đạo đức, thể chất, năng lực sáng tạo, ý thức làm chủ). Con người là trung tâm của chiến lược phát triển. Tạo môi trường văn hóa lành mạnh để hình thành nhân cách tốt đẹp, đẩy lùi cái xấu, cái ác. Người Việt Nam cần có nhận thức, kiến thức, kỹ năng cao để tham gia đấu tranh và xây dựng xã hội.",
+    details: [
+      "Xây dựng con người Việt Nam phát triển toàn diện (trí tuệ, đạo đức, thể chất, năng lực sáng tạo, ý thức làm chủ)",
+      "Con người là trung tâm của chiến lược phát triển",
+      "Tạo môi trường văn hóa lành mạnh để hình thành nhân cách tốt đẹp, đẩy lùi cái xấu, cái ác",
+      "Người Việt Nam cần có nhận thức, kiến thức, kỹ năng cao để tham gia đấu tranh và xây dựng xã hội",
+    ],
     category: "Xây Dựng",
   },
   {
     year: "III. Đạo Đức",
-    phase: "Cách Mạng",
+    phase: "Đạo Đức Cách Mạng",
     title: "Xây Dựng Đạo Đức Cách Mạng",
     description: "Nâng cao đạo đức, quét sạch chủ nghĩa cá nhân",
-    details:
-      "Đưa việc học tập và làm theo tấm gương đạo đức Hồ Chí Minh trở thành công việc thường xuyên, tự giác. Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân. Giáo dục cán bộ, đảng viên về: Cần, kiệm, liêm, chính, chí công vô tư; chống suy thoái về tư tưởng chính trị, đạo đức, lối sống, 'tự diễn biến', 'tự chuyển hóa'. Chú trọng tu dưỡng đạo đức suốt đời, kết hợp giữa 'xây' và 'chống'.",
+    details: [
+      "Đưa việc học tập và làm theo tấm gương đạo đức Hồ Chí Minh trở thành công việc thường xuyên, tự giác",
+      "Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân",
+      "Giáo dục cán bộ, đảng viên về: Cần, kiệm, liêm, chính, chí công vô tư",
+      "Chống suy thoái về tư tưởng chính trị, đạo đức, lối sống, 'tự diễn biến', 'tự chuyển hóa'",
+      "Chú trọng tu dưỡng đạo đức suốt đời, kết hợp giữa 'xây' và 'chống'",
+    ],
     category: "Xây Dựng",
   },
   // {
@@ -197,9 +210,22 @@ function TimelineEvent({
         >
           <CardContent className="pt-0 border-t-2 border-blue-100">
             <div className="p-6 bg-gradient-to-r from-blue-50 to-amber-50 rounded-lg mt-4">
-              <p className="text-muted-foreground leading-relaxed text-pretty">
-                {event.details}
-              </p>
+              <ul className="list-disc list-inside space-y-3">
+                {Array.isArray(event.details) ? (
+                  event.details.map((detail, idx) => (
+                    <li
+                      key={idx}
+                      className="text-muted-foreground leading-relaxed text-pretty"
+                    >
+                      {detail}
+                    </li>
+                  ))
+                ) : (
+                  <li className="text-muted-foreground leading-relaxed text-pretty">
+                    {event.details}
+                  </li>
+                )}
+              </ul>
             </div>
           </CardContent>
         </motion.div>
