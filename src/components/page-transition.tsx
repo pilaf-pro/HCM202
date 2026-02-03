@@ -97,7 +97,7 @@ export function PageTransition({ children }: { children: React.ReactNode }) {
 
                   {/* Title */}
                   <motion.div
-                    className="text-3xl font-serif text-slate-900 mb-3 tracking-tight"
+                    className="text-3xl text-slate-900 mb-3 tracking-tight"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1.1 }}

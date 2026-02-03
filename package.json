@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@github/copilot-sdk": "^0.1.16",
     "@google/genai": "^1.21.0",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
@@ -64,6 +65,7 @@
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.180.0",
+    "tsx": "^4.21.0",
     "vaul": "^1.1.2",
     "zod": "^4.1.11"
   },

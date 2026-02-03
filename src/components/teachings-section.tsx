@@ -37,21 +37,28 @@ const conditions = [
     ],
   },
   {
-    category: '3. Chiến Lược "Trồng Người"',
+    category: '3. Xây Dựng Con Người',
     items: [
       {
-        title: "Tầm Nhìn Dài Hạn",
+        title: "Ý Nghĩa Việc Xây Dựng Con Người",
         content:
-          "Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người",
+          "\"Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người\"",
         subContent:
           "Cho thấy tầm nhìn chiến lược của Hồ Chí Minh: con người được coi là tài sản lâu dài nhất, quan trọng nhất của xã hội.",
       },
       {
-        title: "Xây Dựng Con Người Mới",
+        title: "Nội Dung Xây Dựng Con Người",
         content:
-          "Muốn xây dựng chủ nghĩa xã hội, trước hết cần phải có những con người xã hội chủ nghĩa",
+          "Xây dựng con người toàn diện vừa \"hồng\" vừa \"chuyên\"",
         subContent:
-          "Con người này phải có tư tưởng mới, tác phong mới, đạo đức mới, là những người hoàn toàn trung thành với sự nghiệp cách mạng, có năng lực làm việc cao.",
+          "Đó là những con người có mục đích và lối sống cao đẹp, có bản lĩnh chính trị vững vàng.",
+      },
+      {
+        title: "Phương Pháp Xây Dựng Con Người",
+        content:
+          "\"Một tấm gương sống có giá trị hơn một trăm bài diễn văn tuyên truyền\"",
+        subContent:
+          "Mỗi người tự rèn luyện, tu dưỡng ý thức, kết hợp chặt chẽ với xây dựng cơ chế, tính khoa học của bộ máy và tạo dựng nền dân chủ.",
       },
     ],
   },
@@ -234,10 +241,10 @@ export default function TeachingsSection() {
                       iconCycle[itemIndex % iconCycle.length];
                     const colors =
                       colorClasses[
-                        Object.keys(colorClasses)[
-                          (sectionIndex * 2 + itemIndex) %
-                            Object.keys(colorClasses).length
-                        ] as keyof typeof colorClasses
+                      Object.keys(colorClasses)[
+                      (sectionIndex * 2 + itemIndex) %
+                      Object.keys(colorClasses).length
+                      ] as keyof typeof colorClasses
                       ];
 
                     return (

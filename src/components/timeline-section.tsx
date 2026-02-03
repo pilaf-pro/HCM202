@@ -40,15 +40,15 @@ const timelineEvents = [
       "Đưa việc học tập và làm theo tấm gương đạo đức Hồ Chí Minh trở thành công việc thường xuyên, tự giác. Nâng cao đạo đức cách mạng, quét sạch chủ nghĩa cá nhân. Giáo dục cán bộ, đảng viên về: Cần, kiệm, liêm, chính, chí công vô tư; chống suy thoái về tư tưởng chính trị, đạo đức, lối sống, 'tự diễn biến', 'tự chuyển hóa'. Chú trọng tu dưỡng đạo đức suốt đời, kết hợp giữa 'xây' và 'chống'.",
     category: "Xây Dựng",
   },
-  {
-    year: "IV. Đề Cao",
-    phase: "Nêu Gương",
-    title: "Đề Cao Trách Nhiệm Nêu Gương Của Người Đứng Đầu",
-    description: "Bản mẫu của đạo đức cách mạng",
-    details:
-      "Người đứng đầu phải là bản mẫu của đạo đức cách mạng, là gương sáng cho cán bộ, đảng viên và nhân dân. Phải thực hiện nguyên tắc 'nói đi đôi với làm', không nói suông. Phải chấp hành kỷ luật cao, tự giác tu dưỡng, rèn luyện đạo đức, không có đặc ân, không vượt quy. Phải lắng nghe ý kiến của nhân dân, chủ động liên hệ, thăm hỏi, hiểu rõ nhu cầu của nhân dân để phục vụ tốt hơn.",
-    category: "Xây Dựng",
-  },
+  // {
+  //   year: "IV. Đề Cao",
+  //   phase: "Nêu Gương",
+  //   title: "Đề Cao Trách Nhiệm Nêu Gương Của Người Đứng Đầu",
+  //   description: "Bản mẫu của đạo đức cách mạng",
+  //   details:
+  //     "Người đứng đầu phải là bản mẫu của đạo đức cách mạng, là gương sáng cho cán bộ, đảng viên và nhân dân. Phải thực hiện nguyên tắc 'nói đi đôi với làm', không nói suông. Phải chấp hành kỷ luật cao, tự giác tu dưỡng, rèn luyện đạo đức, không có đặc ân, không vượt quy. Phải lắng nghe ý kiến của nhân dân, chủ động liên hệ, thăm hỏi, hiểu rõ nhu cầu của nhân dân để phục vụ tốt hơn.",
+  //   category: "Xây Dựng",
+  // },
 ];
 
 const categoryColors = {
@@ -104,9 +104,9 @@ function TimelineEvent({
           animate={
             isInView
               ? {
-                  scale: [1, 1.5, 1],
-                  opacity: [0.5, 0, 0.5],
-                }
+                scale: [1, 1.5, 1],
+                opacity: [0.5, 0, 0.5],
+              }
               : {}
           }
           transition={{
@@ -118,11 +118,10 @@ function TimelineEvent({
       </motion.div>
 
       <Card
-        className={`ml-0 md:ml-20 cursor-pointer transition-all duration-300 border-0 shadow-lg hover:shadow-2xl ${
-          selectedEvent
-            ? "ring-2 ring-primary shadow-2xl scale-[1.02] bg-gradient-to-r from-blue-50 to-amber-50"
-            : "hover:scale-[1.01] bg-white"
-        }`}
+        className={`ml-0 md:ml-20 cursor-pointer transition-all duration-300 border-0 shadow-lg hover:shadow-2xl ${selectedEvent
+          ? "ring-2 ring-primary shadow-2xl scale-[1.02] bg-gradient-to-r from-blue-50 to-amber-50"
+          : "hover:scale-[1.01] bg-white"
+          }`}
       >
         <CardHeader
           onClick={() => setSelectedEvent(!selectedEvent)}
@@ -142,7 +141,7 @@ function TimelineEvent({
                   variant="outline"
                   className={
                     categoryColors[
-                      event.category as keyof typeof categoryColors
+                    event.category as keyof typeof categoryColors
                     ]
                   }
                 >
@@ -258,7 +257,7 @@ export default function TimelineSection() {
             className="inline-block mb-4"
           >
             <span className="text-sm font-semibold text-primary uppercase tracking-widest">
-              Bản Chất và Mục Tiêu
+
             </span>
           </motion.div>
 
@@ -268,9 +267,9 @@ export default function TimelineSection() {
               isHeaderInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
             }
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-red-600 to-secondary bg-clip-text text-transparent mb-6 pb-1 pt-1 text-balance"
+            className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-red-600 to-secondary bg-clip-text text-transparent mb-6 pb-1 pt-1 text-balance leading-relaxed"
           >
-            Đặc Trưng & Lý Tưởng Của Chủ Nghĩa Xã Hội
+            Xây dựng văn hóa, đạo đức, con người Việt Nam hiện nay
           </motion.h2>
 
           <motion.p
@@ -281,8 +280,7 @@ export default function TimelineSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed"
           >
-            Sáu đặc trưng cơ bản xác định bản chất và lý tưởng của chủ nghĩa xã
-            hội
+            Xây dựng và phát triển văn hóa, con người và đạo đức cách mạng
           </motion.p>
 
           <motion.div
@@ -307,11 +305,10 @@ export default function TimelineSection() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setSelectedCategory(null)}
-                  className={`px-4 py-2 rounded-full border-2 font-medium transition-all duration-300 ${
-                    selectedCategory === null
-                      ? "bg-primary text-white border-primary shadow-lg"
-                      : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
-                  }`}
+                  className={`px-4 py-2 rounded-full border-2 font-medium transition-all duration-300 ${selectedCategory === null
+                    ? "bg-primary text-white border-primary shadow-lg"
+                    : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+                    }`}
                 >
                   Toàn bộ
                 </motion.button>
@@ -330,15 +327,14 @@ export default function TimelineSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-full border-2 font-medium transition-all duration-300 ${
-                      selectedCategory === category
-                        ? categoryActiveColors[
-                            category as keyof typeof categoryActiveColors
-                          ]
-                        : categoryColors[
-                            category as keyof typeof categoryColors
-                          ]
-                    }`}
+                    className={`px-4 py-2 rounded-full border-2 font-medium transition-all duration-300 ${selectedCategory === category
+                      ? categoryActiveColors[
+                      category as keyof typeof categoryActiveColors
+                      ]
+                      : categoryColors[
+                      category as keyof typeof categoryColors
+                      ]
+                      }`}
                   >
                     {category}
                   </motion.button>
