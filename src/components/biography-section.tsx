@@ -187,7 +187,6 @@ export default function BiographySection() {
                       <li>Nghệ thuật, khoa học</li>
                       <li>Phong tục, tập quán tốt đẹp</li>
                     </ul>
-                    <p>Văn hóa không tồn tại tách rời mà gắn bó chặt chẽ với kinh tế, chính trị và xã hội.</p>
                   </div>
                 </CardContent>
               </Card>
