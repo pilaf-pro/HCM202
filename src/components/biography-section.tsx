@@ -156,14 +156,11 @@ export default function BiographySection() {
                     <GraduationCap className="w-8 h-8 text-blue-500" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-blue-500 mb-6">
-                    Phong Trào Thực Tiễn
+                    Quan niệm
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Chủ nghĩa xã hội là một phong trào đấu tranh của nhân dân
-                      lao động chống lại áp bức và bất công. Đây là sức mạnh to
-                      lớn của giai cấp công nhân trong cuộc chiến giành quyền
-                      lợi của mình.
+                      Hồ Chí Minh quan niệm: "văn hóa là tổng hợp những giá trị vật chất và tinh thần do con người sáng tạo ra trong lịch sử, nhằm phục vụ đời sống và sự phát triển của con người".
                     </p>
                   </div>
                 </CardContent>
@@ -181,15 +178,16 @@ export default function BiographySection() {
                     <Briefcase className="w-8 h-8 text-secondary" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-secondary mb-6">
-                    Trào Lưu Tư Tưởng
+                    Văn hóa bao gồm:
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
-                    <p>
-                      Chủ nghĩa xã hội là một trào lưu tư tưởng và lý luận phản
-                      ánh lý tưởng giải phóng nhân dân lao động. Nó tìm cách
-                      giải thích các quy luật xã hội để hướng dẫn hành động cách
-                      mạng.
-                    </p>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Tư tưởng, đạo đức, lối sống</li>
+                      <li>Giáo dục, học vấn</li>
+                      <li>Nghệ thuật, khoa học</li>
+                      <li>Phong tục, tập quán tốt đẹp</li>
+                    </ul>
+                    <p>Văn hóa không tồn tại tách rời mà gắn bó chặt chẽ với kinh tế, chính trị và xã hội.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -210,14 +208,11 @@ export default function BiographySection() {
                     <Briefcase className="w-8 h-8 text-green-500" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-green-500 mb-6">
-                    Khoa Học
+                    Văn hóa là nền tảng tinh thần của xã hội
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Chủ nghĩa xã hội khoa học nghiên cứu về sứ mệnh lịch sử
-                      của giai cấp công nhân. Nó dựa trên phân tích khoa học về
-                      hình thái kinh tế - xã hội và quy luật phát triển của xã
-                      hội.
+                      Định hướng tư tưởng, đạo đức và lối sống con người.  Góp phần giữ vững ổn định xã hội và phát triển bền vững
                     </p>
                   </div>
                 </CardContent>
@@ -235,14 +230,35 @@ export default function BiographySection() {
                     <Briefcase className="w-8 h-8 text-purple-500" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-purple-500 mb-6">
-                    Chế Độ Xã Hội
+                    Văn hóa là mục tiêu của sự nghiệp cách mạng
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Chủ nghĩa xã hội là một chế độ xã hội tốt đẹp, giai đoạn
-                      đầu của hình thái kinh tế - xã hội cộng sản chủ nghĩa, nơi
-                      các quan hệ sản xuất phù hợp với lực lượng sản xuất.
+                      Cách mạng không chỉ nhằm giải phóng dân tộc, giai cấp mà còn hướng tới xây dựng con người mới, đời sống tinh thần tiến bộ
                     </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedCard>
+            <AnimatedCard delay={0.4} direction="right">
+              <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-gradient-to-br from-purple-50 to-purple-100/50 h-full group">
+                <CardContent className="p-8">
+                  <motion.div
+                    className="w-16 h-16 bg-purple-500/20 rounded-xl mb-6 flex items-center justify-center group-hover:bg-purple-500/30 transition-colors"
+                    whileHover={{ rotate: 360 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Briefcase className="w-8 h-8 text-purple-500" />
+                  </motion.div>
+                  <h3 className="text-2xl font-bold text-purple-500 mb-6">
+                    Văn hóa là động lực thúc đẩy phát triển
+                  </h3>
+                  <div className="space-y-4 text-muted-foreground">
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Nâng cao dân trí</li>
+                      <li>Bồi dưỡng nhân cách, đạo đức</li>
+                      <li>Phát huy tính sáng tạo của nhân dân</li>
+                    </ul>
                   </div>
                 </CardContent>
               </Card>
@@ -258,27 +274,40 @@ export default function BiographySection() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-primary mb-3">
-                    Tính Dân Tộc
+                    Xây Dựng Tâm Lý
                   </h4>
                   <p className="text-muted-foreground">
-                    Giữ gìn cốt cách và bản sắc dân tộc Việt Nam.
+                    Tinh thần độc lập tự cường
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-primary mb-3">
-                    Tính Khoa Học
+                    Xây Dựng Luân Lý
                   </h4>
                   <p className="text-muted-foreground">
-                    Tiên tiến, hiện đại, chống mê tín, dựa trên khoa học.
+                    Biết hy sinh thân mình, làm lợi cho quần chúng
                   </p>
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-primary mb-3">
-                    Tính Đại Chúng
+                    Xây Dựng Xã Hội
                   </h4>
                   <p className="text-muted-foreground">
-                    Phục vụ đông đảo nhân dân, dễ hiểu, gần gũi.
+                    Mọi sự nghiệp liên quan đến phúc lợi của nhân dân
                   </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-primary mb-3">
+                    Xây Dựng Chính Trị
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Dân quyền
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-primary mb-3">
+                    Xây Dựng Kinh Tế
+                  </h4>
                 </div>
               </div>
             </CardContent>
