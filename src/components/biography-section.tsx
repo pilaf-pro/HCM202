@@ -207,11 +207,11 @@ export default function BiographySection() {
                     <Briefcase className="w-8 h-8 text-green-500" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-green-500 mb-6">
-                    Văn hóa là nền tảng tinh thần của xã hội
+                    Văn hóa là một mặt trận
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Định hướng tư tưởng, đạo đức và lối sống con người.  Góp phần giữ vững ổn định xã hội và phát triển bền vững
+                      Văn hóa là một trong bốn nội dung chính của đời sống kinh tế - xã hội, quan trọng ngang các vấn đề kinh tế, chính trị và xã hội
                     </p>
                   </div>
                 </CardContent>
@@ -250,14 +250,10 @@ export default function BiographySection() {
                     <Briefcase className="w-8 h-8 text-purple-500" />
                   </motion.div>
                   <h3 className="text-2xl font-bold text-purple-500 mb-6">
-                    Văn hóa là động lực thúc đẩy phát triển
+                    Văn hóa phục vụ quần chúng nhân dân
                   </h3>
                   <div className="space-y-4 text-muted-foreground">
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Nâng cao dân trí</li>
-                      <li>Bồi dưỡng nhân cách, đạo đức</li>
-                      <li>Phát huy tính sáng tạo của nhân dân</li>
-                    </ul>
+                    <p>Mọi hoạt động văn hóa phải trở về cuộc sống thực tại của quần chúng, phản ánh được khát vọng và tư tưởng của quần chúng</p>
                   </div>
                 </CardContent>
               </Card>
